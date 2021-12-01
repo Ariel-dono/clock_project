@@ -9,3 +9,17 @@
 #### Install: npm i
 
 #### run: npm run start
+
+#### API definition:
+
+##### Post: /settings 
+
+##### Body:  
+{
+    "seconds": "quack tick",
+    "minutes": "quack tock",
+    "hours": "quack bong"
+}
+
+##### Get: /settings 
+
