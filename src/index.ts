@@ -1,7 +1,10 @@
-import RoutingFactory from './routing/routingFactory.router'
-import SettingsController from './routing/settings.router'
+import express from 'express'
+import ActionFactory from './handlers/actionFactory.handler'
+import SettingsController from './handlers/settings.handler'
 
-const app = new RoutingFactory(
+// load the listed features at the app in a decoupled way
+const app = new ActionFactory(
+  express(),
   [
     new SettingsController()
   ],

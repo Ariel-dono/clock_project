@@ -1,6 +1,7 @@
 import {Router} from 'express'
 
-export interface RoutingBinding{
+// define the handler binding interaction
+export interface HandlerBinding{
     intializeRoutes(): void;
     router: Router;
 }
